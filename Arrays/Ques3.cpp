@@ -20,3 +20,4 @@ int main() {
         cout << "Not Prime";
     return 0;
 }
+
