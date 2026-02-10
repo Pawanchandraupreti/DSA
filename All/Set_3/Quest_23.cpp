@@ -21,5 +21,3 @@ int main() {
     cout << maxSum;
     return 0;
 }
-
-
