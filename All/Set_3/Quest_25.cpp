@@ -23,5 +23,3 @@ int main() {
     cout << maxLen;
     return 0;
 }
-
-
