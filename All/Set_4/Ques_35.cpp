@@ -16,7 +16,6 @@ int main() {
         } else
             r = mid - 1;
     }
-
     cout << ans;
     return 0;
 }
