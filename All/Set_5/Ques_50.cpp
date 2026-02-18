@@ -28,4 +28,3 @@ int main() {
     cout << longest;
     return 0;
 }
-
