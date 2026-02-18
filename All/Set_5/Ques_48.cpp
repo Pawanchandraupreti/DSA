@@ -24,4 +24,3 @@ int main() {
     cout << candidate;
     return 0;
 }
-
