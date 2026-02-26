@@ -24,3 +24,4 @@ int main() {
     solve(arr, 7, curr, 0);
     return 0;
 }
+
