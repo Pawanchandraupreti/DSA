@@ -23,5 +23,3 @@ int main() {
     generate(nums, curr, 0);
     return 0;
 }
-
-
