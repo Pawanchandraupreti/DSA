@@ -35,5 +35,3 @@ int main() {
     cout << (solve(board, 0) ? "Solution Exists" : "No Solution");
     return 0;
 }
-
-
