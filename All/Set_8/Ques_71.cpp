@@ -24,3 +24,4 @@ int main() {
     cout << dp[n][W];
     return 0;
 }
+
