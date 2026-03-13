@@ -56,3 +56,4 @@ int main() {
 
     cout<<search(root,"apple");
 }
+
