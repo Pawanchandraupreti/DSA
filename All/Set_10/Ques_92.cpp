@@ -37,5 +37,3 @@ int main() {
 
     cout << water;
 }
-
-
