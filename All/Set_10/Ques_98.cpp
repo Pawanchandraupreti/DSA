@@ -42,3 +42,4 @@ int main() {
 
     cout << s.substr(start, minLen);
 }
+
