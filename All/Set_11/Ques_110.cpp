@@ -50,4 +50,3 @@ int main() {
 
     dfs(0, -1, vis, tin, low, adj);
 }
-
