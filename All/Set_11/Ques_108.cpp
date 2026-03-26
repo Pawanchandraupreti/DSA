@@ -49,5 +49,3 @@ int main() {
 
     cout << sum;
 }
-
-
