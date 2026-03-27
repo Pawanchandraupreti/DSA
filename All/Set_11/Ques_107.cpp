@@ -40,6 +40,8 @@ int main() {
         return a.w < b.w;
     });
 
+
+    
     int cost = 0;
 
     for(auto e : edges) {
