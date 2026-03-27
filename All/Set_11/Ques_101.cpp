@@ -16,6 +16,8 @@ bool canPlace(int stalls[], int n, int cows, int dist) {
     return count >= cows;
 }
 
+
+
 int main() {
     int stalls[] = {1,2,4,8,9};
     int n = 5, cows = 3;
