@@ -40,3 +40,4 @@ int main() {
     for(int x : result)
         cout << x << " ";
 }
+
