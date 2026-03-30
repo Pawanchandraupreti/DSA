@@ -35,5 +35,3 @@ int main() {
     TreeNode* ans = lca(root, 6, 2);
     cout << ans->val;
 }
-
-
