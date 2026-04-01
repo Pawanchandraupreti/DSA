@@ -39,5 +39,3 @@ int main() {
     else
         cout << "Balanced";
 }
-
-
