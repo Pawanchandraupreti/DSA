@@ -30,4 +30,3 @@ int main() {
 
     cout << dp[n-1];
 }
-
