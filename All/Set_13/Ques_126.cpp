@@ -34,3 +34,5 @@ int main() {
     update(bit, 3, 4, n);
     cout << query(bit, 5);
 }
+
+
