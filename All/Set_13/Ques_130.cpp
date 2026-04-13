@@ -54,4 +54,3 @@ int main() {
     if(ans) cout << ans->val;
     else cout << "No Successor";
 }
-
