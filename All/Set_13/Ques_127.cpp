@@ -56,5 +56,3 @@ int main() {
         if(isArt[i]) cout << i << " ";
     }
 }
-
-

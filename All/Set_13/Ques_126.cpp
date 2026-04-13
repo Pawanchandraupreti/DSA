@@ -35,4 +35,3 @@ int main() {
     cout << query(bit, 5);
 }
 
-
