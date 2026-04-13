@@ -43,7 +43,3 @@ int main() {
         cout << mf.findMedian() << " ";
     }
 }
-
-
-
-
