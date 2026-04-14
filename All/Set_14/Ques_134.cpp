@@ -1,4 +1,5 @@
 // Sparse Table (Range Minimum Query)
+// Time Complexity: Preprocessing O(n log n), query O(1)
 
 #include <iostream>
 #include <vector>
