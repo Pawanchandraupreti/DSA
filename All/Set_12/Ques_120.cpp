@@ -39,5 +39,3 @@ int main() {
 
     cout << solve(2, 10);
 }
-
-
