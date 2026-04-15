@@ -21,6 +21,8 @@ int main() {
         }
     }
 
+
+    
     auto rangeMin = [&](int l, int r) {
         int len = r - l + 1;
         int j = 0;

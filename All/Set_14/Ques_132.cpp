@@ -53,3 +53,5 @@ int main() {
     vector<int> pos = rabinKarp(text, pat);
     for(int i : pos) cout << i << " ";
 }
+
+

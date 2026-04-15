@@ -71,3 +71,5 @@ int main() {
     update(0, 0, n - 1, 1, 4, 2, seg, lazy);
     cout << query(0, 0, n - 1, 1, 3, seg, lazy);
 }
+
+

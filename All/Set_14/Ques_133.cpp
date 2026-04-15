@@ -40,9 +40,13 @@ int maxFlow(int n, int s, int t, vector<vector<int>>& cap, vector<vector<int>>& 
     vector<int> parent(n);
 
     while(bfs(s, t, cap, adj, parent)) {
+  
+  
         int newFlow = 1000000000;
         int cur = t;
 
+
+        
         while(cur != s) {
             int prev = parent[cur];
             newFlow = min(newFlow, cap[prev][cur]);
