@@ -1,5 +1,4 @@
 // Rabin-Karp String Matching
-// Time Complexity: Average O(n + m), worst-case O(n * m)
 
 #include <iostream>
 #include <string>
