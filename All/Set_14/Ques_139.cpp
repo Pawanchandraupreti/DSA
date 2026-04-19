@@ -46,3 +46,4 @@ int main() {
     vector<int> order = topoSort(n, g);
     for(int x : order) cout << x << " ";
 }
+
