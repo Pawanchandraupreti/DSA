@@ -49,3 +49,5 @@ int main() {
     dsu.unite(2, 4);
     cout << dsu.same(2, 4);
 }
+
+
