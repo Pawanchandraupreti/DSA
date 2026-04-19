@@ -1,5 +1,5 @@
 // Binary Lifting - Kth Ancestor Query
-// Time Complexity: Preprocessing O(n log n), query O(log n)
+
 
 #include <iostream>
 #include <vector>
