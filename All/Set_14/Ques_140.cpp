@@ -52,3 +52,6 @@ int main() {
     vector<int> dist = dijkstra(n, 0, g);
     for(int d : dist) cout << d << " ";
 }
+
+
+
