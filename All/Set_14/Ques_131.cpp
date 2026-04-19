@@ -1,5 +1,5 @@
 // Segment Tree with Lazy Propagation (Range Add + Range Sum)
-// Time Complexity: update/query O(log n), build O(n)
+
 
 #include <iostream>
 #include <vector>
