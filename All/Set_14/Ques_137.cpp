@@ -55,3 +55,5 @@ int main() {
     vector<int> pos = kmpSearch(text, pat);
     for(int i : pos) cout << i << " ";
 }
+
+
