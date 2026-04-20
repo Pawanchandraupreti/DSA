@@ -1,5 +1,4 @@
 // KMP String Matching
-// Time Complexity: O(n + m)
 
 #include <iostream>
 #include <string>

@@ -1,5 +1,4 @@
 // Fenwick Tree (Binary Indexed Tree) - Prefix Sum Query
-// Time Complexity: update/query O(log n), build O(n log n)
 
 #include <iostream>
 #include <vector>

@@ -1,5 +1,4 @@
 // Dijkstra's Shortest Path Algorithm
-// Time Complexity: O((V + E) log V)
 
 #include <iostream>
 #include <queue>

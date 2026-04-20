@@ -1,5 +1,4 @@
 // Disjoint Set Union (Union-Find)
-// Time Complexity: nearly O(1) amortized per operation
 
 #include <iostream>
 #include <vector>

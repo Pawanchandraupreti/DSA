@@ -1,5 +1,4 @@
 // Topological Sort (Kahn's Algorithm)
-// Time Complexity: O(V + E)
 
 #include <iostream>
 #include <queue>
