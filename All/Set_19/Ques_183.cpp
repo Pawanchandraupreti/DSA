@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     int arr[] = {1, 2, 3, 5, 6, 7, 8};
     int n = 7;
-    int expectedSum = (8 * 9) / 2;  // Sum from 1 to 8
+    int expectedSum = (8 * 9) / 2;  
     int actualSum = 0;
     
     for (int i = 0; i < n; i++) {
