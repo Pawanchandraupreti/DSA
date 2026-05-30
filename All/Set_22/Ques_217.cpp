@@ -14,6 +14,7 @@ int lowerBound(const vector<int>& a, int x) {
     return l;
 }
 
+
 int upperBound(const vector<int>& a, int x) {
     int l = 0, r = (int)a.size();
     while (l < r) {
