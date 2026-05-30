@@ -14,3 +14,6 @@ int main() {
     cout << idx;
     return 0;
 }
+
+
+
