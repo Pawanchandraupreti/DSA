@@ -13,5 +13,3 @@ int main() {
     cout << (sorted ? 1 : 0);
     return 0;
 }
-
-
