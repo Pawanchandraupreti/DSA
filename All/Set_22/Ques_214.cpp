@@ -25,5 +25,3 @@ int main() {
     for (int x : order) cout << x << " ";
     return 0;
 }
-
-
