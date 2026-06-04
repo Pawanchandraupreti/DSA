@@ -11,3 +11,5 @@ int main() {
     cout << (s == t ? "YES" : "NO");
     return 0;
 }
+
+
