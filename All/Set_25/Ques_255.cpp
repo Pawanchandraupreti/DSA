@@ -26,3 +26,4 @@ int main(){
     for(size_t i=0;i<lis.size();++i){ if(i) cout<<" "; cout<<lis[i]; }
     return 0;
 }
+
