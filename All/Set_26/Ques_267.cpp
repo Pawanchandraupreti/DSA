@@ -36,3 +36,4 @@ int main() {
     cout << (dist[n] == INF ? -1 : dist[n]);
     return 0;
 }
+
