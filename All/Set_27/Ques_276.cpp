@@ -29,3 +29,5 @@ int main(){
     for(size_t i=0;i<path.size();++i){ if(i) cout<<' '; cout<<path[i]; }
     return 0;
 }
+
+
