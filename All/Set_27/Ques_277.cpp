@@ -25,5 +25,3 @@ int main(){
     cout<<kth(a,b,k);
     return 0;
 }
-
-
