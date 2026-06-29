@@ -14,8 +14,8 @@ int main(){
     int start = -1; int s1=0,s2=0;
     for(int i=1;i<=n;++i){ if(outdeg[i]-indeg[i]==1) s1++; else if(indeg[i]-outdeg[i]==1) s2++; else if(indeg[i]!=outdeg[i]) { cout<<-1; return 0; } if(outdeg[i]>0 && start==-1) start=i; }
     if(!((s1==1 && s2==1) || (s1==0 && s2==0))){ cout<<-1; return 0; }
-    if(start==-1) start=1;
-    // Hierholzer
+    if(start==-1) start=1
+        
     vector<int> idx(n+1,0); vector<int> st, path;
     st.push_back(start);
     while(!st.empty()){
@@ -29,5 +29,3 @@ int main(){
     for(size_t i=0;i<path.size();++i){ if(i) cout<<' '; cout<<path[i]; }
     return 0;
 }
-
-
