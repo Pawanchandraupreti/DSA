@@ -17,5 +17,3 @@ int main(){
     for(int x:topo) cout<<x<<' '; return 0;
 }
 
-
-
