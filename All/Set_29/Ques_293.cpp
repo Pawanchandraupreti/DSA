@@ -15,3 +15,5 @@ int main(){
     reverse(chosen.begin(), chosen.end());
     for(int idx:chosen) cout<<idx<<' '; return 0;
 }
+
+
