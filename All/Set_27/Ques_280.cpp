@@ -11,4 +11,5 @@ int main(){ ios::sync_with_stdio(false); cin.tie(nullptr); int n; if(!(cin>>n)) 
     for(int i=(int)pts.size()-1;i>=0;--i){ auto &p=pts[i]; while(hi.size()>=2 && cross(hi[hi.size()-2], hi.back(), p) <= 0) hi.pop_back(); hi.push_back(p); }
     lo.pop_back(); hi.pop_back(); vector<P> hull = lo; hull.insert(hull.end(), hi.begin(), hi.end()); cout<<hull.size()<<"\n"; for(auto &p: hull) cout<<p.x<<" "<<p.y<<"\n"; return 0; }
 
-    
+
+

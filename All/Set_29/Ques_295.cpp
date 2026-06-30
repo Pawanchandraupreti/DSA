@@ -16,3 +16,6 @@ int main(){
     if((int)topo.size()!=n) { cout<<"Cycle detected"; return 0; }
     for(int x:topo) cout<<x<<' '; return 0;
 }
+
+
+
