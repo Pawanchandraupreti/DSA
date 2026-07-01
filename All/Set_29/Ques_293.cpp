@@ -16,4 +16,3 @@ int main(){
     for(int idx:chosen) cout<<idx<<' '; return 0;
 }
 
-

@@ -17,5 +17,3 @@ int main(){
     for(int u:st) if(comp[u]==-1) dfs2(u, cc++);
     cout << cc; return 0;
 }
-
-

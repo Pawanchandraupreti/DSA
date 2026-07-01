@@ -15,5 +15,5 @@ int main(){
         if(it == dp.end()) dp.push_back(a[i]);
         else *it = a[i];
     }
-    cout << dp.size(); return 0;
+    cout << dp.size(); return 0; 
 }
