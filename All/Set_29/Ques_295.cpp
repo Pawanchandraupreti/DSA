@@ -1,19 +1,32 @@
-// Topological sort with cycle detection
+// Edit distance between two strings
 
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    ios::sync_with_stdio(false); cin.tie(nullptr);
-    int n,m; if(!(cin>>n>>m)) return 0;
-    vector<vector<int>> g(n+1); vector<int> indeg(n+1,0);
-    for(int i=0;i<m;++i){ int u,v; cin>>u>>v; g[u].push_back(v); indeg[v]++; }
-    queue<int> q; vector<int> topo;
-    for(int i=1;i<=n;++i) if(indeg[i]==0) q.push(i);
-    while(!q.empty()){ int u=q.front(); q.pop(); topo.push_back(u);
-        for(int v:g[u]) { indeg[v]--; if(indeg[v]==0) q.push(v); }
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    string a, b;
+    if (!getline(cin, a)) return 0;
+    if (a.empty()) getline(cin, a);
+    getline(cin, b);
+
+    int n = (int)a.size();
+    int m = (int)b.size();
+    vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
+
+    for (int i = 0; i <= n; ++i) dp[i][0] = i;
+    for (int j = 0; j <= m; ++j) dp[0][j] = j;
+
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1; j <= m; ++j) {
+            if (a[i - 1] == b[j - 1]) dp[i][j] = dp[i - 1][j - 1];
+            else dp[i][j] = 1 + min({dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]});
+        }
     }
-    if((int)topo.size()!=n) { cout<<"Cycle detected"; return 0; }
-    for(int x:topo) cout<<x<<' '; return 0;
+
+    cout << dp[n][m];
+    return 0;
 }
 
