@@ -52,5 +52,3 @@ int main() {
     cout << countComponents;
     return 0;
 }
-
-
