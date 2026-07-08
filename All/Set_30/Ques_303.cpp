@@ -21,4 +21,3 @@ int main() {
     cout << (isPalindrome ? "Yes" : "No");
     return 0;
 }
-
