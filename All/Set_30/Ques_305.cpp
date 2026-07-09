@@ -14,8 +14,6 @@ int main() {
 
     sort(intervals.begin(), intervals.end());
 
-
-    
     vector<pair<int, int>> merged;
     for (const auto &interval : intervals) {
         if (merged.empty() || interval.first > merged.back().second) {
@@ -31,5 +29,3 @@ int main() {
     }
     return 0;
 }
-
-
