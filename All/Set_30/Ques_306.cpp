@@ -13,4 +13,3 @@ int main() {
     cout << g << '\n' << l;
     return 0;
 }
-
