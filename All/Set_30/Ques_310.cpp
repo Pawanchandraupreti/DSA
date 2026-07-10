@@ -30,4 +30,3 @@ int main() {
     cout << (st.empty() ? "Yes" : "No");
     return 0;
 }
-
