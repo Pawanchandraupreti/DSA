@@ -19,9 +19,7 @@ struct DSU {
 };
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
+    
     int n, m;
     if (!(cin >> n >> m)) return 0;
     struct E { int u, v; ll w; };
