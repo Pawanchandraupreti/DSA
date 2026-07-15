@@ -5,9 +5,7 @@ using namespace std;
 using ll = long long;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
+    
     int n, q;
     if (!(cin >> n >> q)) return 0;
     vector<vector<int>> g(n + 1);
