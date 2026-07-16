@@ -40,9 +40,6 @@ Mat mpow(Mat base, long long e) {
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
     long long n;
     if (!(cin >> n)) return 0;
 
