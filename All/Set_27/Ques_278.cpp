@@ -7,8 +7,6 @@ using ll = long long;
 static const ll MOD = 1000000007LL;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
 
     int n, S;
     if (!(cin >> n >> S)) return 0;
