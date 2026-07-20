@@ -12,4 +12,3 @@ int main() {
     cout << (rev == orig ? "Yes" : "No");
     return 0;
 }
-
