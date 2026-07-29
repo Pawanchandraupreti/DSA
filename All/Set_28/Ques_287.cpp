@@ -61,4 +61,3 @@ int main() {
     cout << dist[n - 1][m - 1] << '\n' << path.size() << '\n' << path;
     return 0;
 }
-
