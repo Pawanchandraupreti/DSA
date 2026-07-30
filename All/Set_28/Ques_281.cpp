@@ -61,5 +61,3 @@ int main() {
     for (int x : chosen) cout << ' ' << x;
     return 0;
 }
-
-
