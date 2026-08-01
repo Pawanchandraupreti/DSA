@@ -18,4 +18,3 @@ int main() {
     cout << expected - sum;
     return 0;
 }
-
