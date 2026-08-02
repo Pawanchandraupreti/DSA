@@ -9,3 +9,5 @@ int main() {
     cout << __builtin_popcountll(x);
     return 0;
 }
+
+
