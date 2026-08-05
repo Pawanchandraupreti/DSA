@@ -17,3 +17,5 @@ int main() {
     cout << mn;
     return 0;
 }
+
+
