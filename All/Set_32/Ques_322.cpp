@@ -10,3 +10,4 @@ int main() {
     cout << (x % 2 == 0 ? "Even" : "Odd");
     return 0;
 }
+
