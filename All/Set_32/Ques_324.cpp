@@ -18,4 +18,3 @@ int main() {
     cout << pos << ' ' << neg;
     return 0;
 }
-
