@@ -22,3 +22,4 @@ int main() {
     cout << best;
     return 0;
 }
+
