@@ -24,3 +24,4 @@ int main() {
     cout << merge_count(a, 0, n);
     return 0;
 }
+
