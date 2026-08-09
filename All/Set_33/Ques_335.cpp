@@ -36,3 +36,4 @@ int main() {
     else cout << dist[n];
     return 0;
 }
+
