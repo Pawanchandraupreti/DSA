@@ -19,5 +19,3 @@ int main() {
     cout << tails.size();
     return 0;
 }
-
-
