@@ -24,3 +24,4 @@ int main(){
     cout << Ak[0][n-1] % MOD;
     return 0;
 }
+
