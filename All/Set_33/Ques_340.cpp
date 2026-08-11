@@ -16,3 +16,4 @@ int main(){
     if (used != n-1) cout << -1; else cout << total;
     return 0;
 }
+
