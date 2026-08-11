@@ -13,3 +13,5 @@ int main() {
     cout << a[k-1];
     return 0;
 }
+
+
