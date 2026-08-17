@@ -29,6 +29,3 @@ int main() {
 
     cout << longestCommonPrefix(words);
     return 0;
-}
-
-
