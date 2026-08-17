@@ -38,4 +38,3 @@ int main() {
     cout << components;
     return 0;
 }
-
