@@ -31,3 +31,5 @@ int main() {
     cout << (areAnagrams(first, second) ? 1 : 0);
     return 0;
 }
+
+
