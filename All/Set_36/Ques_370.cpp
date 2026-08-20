@@ -1,6 +1,6 @@
 // Merge two sorted arrays without using an extra array for the result
 
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std;
 
 vector<int> mergeSortedArrays(const vector<int>& first, const vector<int>& second) {
