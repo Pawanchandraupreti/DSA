@@ -36,3 +36,4 @@ int main() {
     cout << firstIndex(arr, target);
     return 0;
 }
+
