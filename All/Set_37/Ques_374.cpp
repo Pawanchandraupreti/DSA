@@ -32,4 +32,3 @@ int main() {
     cout << countPrimes(n);
     return 0;
 }
-
