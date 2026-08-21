@@ -30,5 +30,3 @@ int main() {
     cout << (isPalindrome(arr) ? 1 : 0);
     return 0;
 }
-
-
