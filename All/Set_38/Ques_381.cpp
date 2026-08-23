@@ -36,3 +36,4 @@ int main() {
     cout << largestRectangleArea(heights);
     return 0;
 }
+
