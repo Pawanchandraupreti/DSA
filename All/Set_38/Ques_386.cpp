@@ -48,3 +48,4 @@ int main() {
     cout << totalNQueens(n);
     return 0;
 }
+
