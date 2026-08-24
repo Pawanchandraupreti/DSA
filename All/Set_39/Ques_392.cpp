@@ -66,3 +66,4 @@ int main() {
     cout << (order.empty() ? "Invalid" : order);
     return 0;
 }
+
