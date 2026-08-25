@@ -52,4 +52,3 @@ int main() {
     cout << fixed << setprecision(1) << findMedianSortedArrays(first, second);
     return 0;
 }
-
