@@ -29,5 +29,3 @@ int main() {
     cout << minCut(text);
     return 0;
 }
-
-
