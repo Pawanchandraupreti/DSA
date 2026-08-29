@@ -45,5 +45,3 @@ int main() {
     cout << maximumProfit(jobs);
     return 0;
 }
-
-
