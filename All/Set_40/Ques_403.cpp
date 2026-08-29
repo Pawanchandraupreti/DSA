@@ -48,3 +48,4 @@ int main() {
     cout << minWindow(text, pattern);
     return 0;
 }
+
