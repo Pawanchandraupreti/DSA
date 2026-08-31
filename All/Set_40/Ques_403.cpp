@@ -33,7 +33,7 @@ string minWindow(const string& text, const string& pattern) {
             windowCount[leftLetter]--;
             if (patternCount.count(leftLetter) && windowCount[leftLetter] < patternCount[leftLetter]) {
                 --formed;
-            }
+        }
             ++left;
         }
     }
