@@ -43,3 +43,5 @@ int main() {
     cout << minCostConnectPoints(points);
     return 0;
 }
+
+
