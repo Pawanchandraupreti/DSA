@@ -40,3 +40,4 @@ int main() {
     cout << (isMatch(text, pattern) ? "true" : "false");
     return 0;
 }
+
