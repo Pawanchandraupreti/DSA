@@ -28,4 +28,3 @@ int main() {
     cout << lengthOfLIS(numbers);
     return 0;
 }
-
