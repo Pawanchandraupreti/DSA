@@ -38,3 +38,4 @@ int main() {
     cout << completed << ' ' << totalProfit;
     return 0;
 }
+
