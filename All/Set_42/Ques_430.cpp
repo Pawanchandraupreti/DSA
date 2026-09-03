@@ -60,3 +60,5 @@ int main() {
     for (int count : occurrences) cout << count << ' ';
     return 0;
 }
+
+
