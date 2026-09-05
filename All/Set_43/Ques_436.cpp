@@ -31,3 +31,5 @@ int main() {
     cout << right - left + 1;
     return 0;
 }
+
+
