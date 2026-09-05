@@ -20,3 +20,4 @@ int main() {
     cout << minMax;
     return 0;
 }
+
