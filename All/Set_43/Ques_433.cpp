@@ -20,4 +20,3 @@ int main() {
     cout << maxDepth;
     return 0;
 }
-
