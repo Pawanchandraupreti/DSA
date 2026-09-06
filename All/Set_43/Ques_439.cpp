@@ -29,7 +29,14 @@ int main() {
         }
     }
     
+    if (arr[n-1] != n - 1) {
+        if (arr[n-1] == n - 2) {
+            res.push_back(to_string(n - 1));
+        } else {
+            res.push_back(to_string(arr[n-1] + 1) + "->" + to_string(n - 1));
+        }
+    }
+    
     for (string s : res) cout << s << " ";
     return 0;
 }
-
