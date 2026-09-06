@@ -61,5 +61,3 @@ int main() {
     cout << components.size();
     return 0;
 }
-
-
