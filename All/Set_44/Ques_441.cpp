@@ -19,3 +19,5 @@ int main() {
     for (auto [l, r] : ans) cout << l << ' ' << r << '\n';
     return 0;
 }
+
+
