@@ -25,3 +25,5 @@ int main() {
     cout << (dp[sum / 2] ? "true" : "false");
     return 0;
 }
+
+
