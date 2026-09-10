@@ -18,3 +18,4 @@ int main() {
     cout << (s[0] == '0' ? 0 : dp[n]);
     return 0;
 }
+
