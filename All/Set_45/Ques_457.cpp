@@ -23,5 +23,3 @@ int main() {
     cout << lo;
     return 0;
 }
-
-
