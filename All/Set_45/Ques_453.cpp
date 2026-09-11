@@ -19,5 +19,3 @@ int main() {
     cout << swaps;
     return 0;
 }
-
-
