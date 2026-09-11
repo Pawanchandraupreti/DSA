@@ -21,5 +21,3 @@ int main() {
     for (int x : a) cout << x << ' ';
     return 0;
 }
-
-
