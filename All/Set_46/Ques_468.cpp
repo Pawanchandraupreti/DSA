@@ -24,4 +24,3 @@ int main() {
     cout << used;
     return 0;
 }
-
