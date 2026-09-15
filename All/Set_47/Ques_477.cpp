@@ -19,3 +19,5 @@ int main() {
     for (auto [l, r] : merged) cout << l << ' ' << r << '\n';
     return 0;
 }
+
+
