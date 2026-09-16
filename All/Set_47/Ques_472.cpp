@@ -25,5 +25,3 @@ int main() {
     cout << ans << '\n';
     return 0;
 }
-
-
