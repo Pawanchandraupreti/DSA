@@ -26,3 +26,4 @@ int main() {
     cout << (curr >= target ? ans : -1) << '\n';
     return 0;
 }
+
