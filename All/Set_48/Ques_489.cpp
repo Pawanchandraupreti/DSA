@@ -28,3 +28,4 @@ int main() {
     cout << (dp[s.size()] ? "true" : "false") << '\n';
     return 0;
 }
+
