@@ -20,4 +20,3 @@ int main() {
     cout << (dp[target] ? "true" : "false") << '\n';
     return 0;
 }
-
