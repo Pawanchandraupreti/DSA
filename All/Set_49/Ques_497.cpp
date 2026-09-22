@@ -18,4 +18,3 @@ int main() {
     cout << maxProfit << '\n';
     return 0;
 }
-
