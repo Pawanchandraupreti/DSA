@@ -19,5 +19,3 @@ int main() {
     cout << prev1 << '\n';
     return 0;
 }
-
-
