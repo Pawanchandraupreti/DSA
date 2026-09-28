@@ -18,15 +18,16 @@ int main() {
         curr = next;
     }
 
+    Node* reversedHead = prev;
     while (prev) {
         cout << prev->value << ' ';
         prev = prev->next;
     }
     cout << '\n';
-    while (prev) {
-        Node* next = prev->next;
-        delete prev;
-        prev = next;
+    while (reversedHead) {
+        Node* next = reversedHead->next;
+        delete reversedHead;
+        reversedHead = next;
     }
     return 0;
 }
