@@ -7,8 +7,7 @@ int main() {
     string s;
     cin >> s;
     int rows;
-    cin >> rows;
-    if (rows <= 1) {
+    if (!(cin >> rows) || rows <= 1) {
         cout << s << '\n';
         return 0;
     }
