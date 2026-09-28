@@ -22,6 +22,7 @@ int main() {
     cin >> k;
     vector<int> values;
     inorder(root, values);
+    if (k < 1 || k > static_cast<int>(values.size())) return 0;
     cout << values[k - 1] << '\n';
     return 0;
 }
