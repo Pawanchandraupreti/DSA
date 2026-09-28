@@ -8,6 +8,10 @@ int main() {
     cin >> s;
     int rows;
     cin >> rows;
+    if (rows <= 1) {
+        cout << s << '\n';
+        return 0;
+    }
     vector<string> arr(rows, "");
     int direction = -1, row = 0;
     for (char c : s) {
