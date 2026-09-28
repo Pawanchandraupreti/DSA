@@ -9,6 +9,13 @@ struct Node {
     Node* right;
 };
 
+void deleteTree(Node* root) {
+    if (!root) return;
+    deleteTree(root->left);
+    deleteTree(root->right);
+    delete root;
+}
+
 int main() {
     Node* root = new Node{1, new Node{2, new Node{4, nullptr, nullptr}, new Node{5, nullptr, nullptr}}, new Node{3, nullptr, nullptr}};
     queue<Node*> q;
@@ -22,10 +29,6 @@ int main() {
         if (cur->right) q.push(cur->right);
     }
     cout << '\n';
-    delete root->left->left;
-    delete root->left->right;
-    delete root->left;
-    delete root->right;
-    delete root;
+    deleteTree(root);
     return 0;
 }
