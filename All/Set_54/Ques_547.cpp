@@ -23,5 +23,10 @@ int main() {
         prev = prev->next;
     }
     cout << '\n';
+    while (prev) {
+        Node* next = prev->next;
+        delete prev;
+        prev = next;
+    }
     return 0;
 }
