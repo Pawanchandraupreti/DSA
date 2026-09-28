@@ -22,5 +22,10 @@ int main() {
         if (cur->right) q.push(cur->right);
     }
     cout << '\n';
+    delete root->left->left;
+    delete root->left->right;
+    delete root->left;
+    delete root->right;
+    delete root;
     return 0;
 }
