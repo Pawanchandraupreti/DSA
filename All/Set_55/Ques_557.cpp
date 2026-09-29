@@ -16,3 +16,4 @@ int main() {
     cout << minimums.top() << '\n';
     return 0;
 }
+
