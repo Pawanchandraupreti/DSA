@@ -30,3 +30,4 @@ int main() {
     cout << (completed == courses ? "true" : "false") << '\n';
     return 0;
 }
+
