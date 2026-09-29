@@ -16,3 +16,4 @@ int main() {
     cout << profit << '\n';
     return 0;
 }
+
