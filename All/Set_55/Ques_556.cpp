@@ -26,3 +26,4 @@ int main() {
     cout << longest << '\n';
     return 0;
 }
+
