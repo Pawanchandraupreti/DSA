@@ -12,3 +12,4 @@ int main() {
     cout << length << '\n';
     return 0;
 }
+
