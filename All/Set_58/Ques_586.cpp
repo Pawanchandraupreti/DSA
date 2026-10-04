@@ -12,3 +12,4 @@ int main() {
     cout << numbers[n - k] << '\n';
     return 0;
 }
+
