@@ -17,3 +17,5 @@ int main() {
     cout << oneStep << '\n';
     return 0;
 }
+
+
