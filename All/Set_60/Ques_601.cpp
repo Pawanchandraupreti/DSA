@@ -17,3 +17,5 @@ int main() {
     for (auto interval : merged) cout << interval.first << ' ' << interval.second << '\n';
     return 0;
 }
+
+
