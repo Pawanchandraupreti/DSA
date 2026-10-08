@@ -27,3 +27,5 @@ int main() {
     cout << (possible.back() ? "true" : "false") << '\n';
     return 0;
 }
+
+
