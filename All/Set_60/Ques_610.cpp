@@ -16,3 +16,4 @@ int main() {
     cout << max(n, slots) << '\n';
     return 0;
 }
+
