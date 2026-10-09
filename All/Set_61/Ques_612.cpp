@@ -15,3 +15,5 @@ int main() {
     cout << (farthest >= n - 1 ? "true" : "false") << '\n';
     return 0;
 }
+
+
