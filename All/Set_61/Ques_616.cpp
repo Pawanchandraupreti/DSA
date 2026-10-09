@@ -15,3 +15,5 @@ int main() {
     } while (next_permutation(numbers.begin(), numbers.end()));
     return 0;
 }
+
+
