@@ -17,3 +17,5 @@ int main() {
     cout << numbers[left] << '\n';
     return 0;
 }
+
+
