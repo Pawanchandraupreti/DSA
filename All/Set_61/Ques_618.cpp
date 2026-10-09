@@ -14,3 +14,4 @@ int main() {
     for (int i = 0; i < min(k, n); i++) cout << points[i].first << ' ' << points[i].second << '\n';
     return 0;
 }
+
