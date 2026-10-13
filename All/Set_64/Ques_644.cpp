@@ -19,3 +19,5 @@ int main() {
     for (auto [start, end] : merged) cout << start << ' ' << end << '\n';
     return 0;
 }
+
+
