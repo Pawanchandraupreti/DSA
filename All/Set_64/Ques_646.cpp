@@ -13,3 +13,5 @@ int main() {
     cout << a[n - k] << '\n';
     return 0;
 }
+
+
