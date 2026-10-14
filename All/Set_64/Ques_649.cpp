@@ -30,4 +30,3 @@ int main() {
     cout << (grid[n - 1][m - 1] == 0 ? -1 : grid[n - 1][m - 1]) << '\n';
     return 0;
 }
-
