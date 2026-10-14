@@ -17,5 +17,3 @@ int main() {
     cout << previousOne << '\n';
     return 0;
 }
-
-
