@@ -11,3 +11,5 @@ int main() {
     cout << (s == reversed ? "YES" : "NO") << '\n';
     return 0;
 }
+
+
