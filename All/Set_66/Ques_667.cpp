@@ -27,3 +27,5 @@ int main() {
     cout << (dp[s.size()] ? "YES" : "NO") << '\n';
     return 0;
 }
+
+
