@@ -23,3 +23,5 @@ int main() {
     cout << answer * answer << '\n';
     return 0;
 }
+
+
