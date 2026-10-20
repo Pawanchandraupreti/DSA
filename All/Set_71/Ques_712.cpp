@@ -22,3 +22,4 @@ int main() {
     else cout << max(rob(a, 0, n - 2), rob(a, 1, n - 1)) << '\n';
     return 0;
 }
+
