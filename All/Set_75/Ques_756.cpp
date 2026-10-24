@@ -1,4 +1,4 @@
-// Perfect Squares Minimum Count
+// Longest Turbulent Subarray
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -6,11 +6,15 @@ using namespace std;
 int main() {
     int n;
     cin >> n;
-    vector<int> dp(n + 1, n + 1);
-    dp[0] = 0;
-    for (int sum = 1; sum <= n; sum++) {
-        for (int square = 1; square * square <= sum; square++) dp[sum] = min(dp[sum], dp[sum - square * square] + 1);
+    vector<int> a(n);
+    for (int &x : a) cin >> x;
+    int up = 1, down = 1, answer = n > 0;
+    for (int i = 1; i < n; i++) {
+        if (a[i] > a[i - 1]) up = down + 1, down = 1;
+        else if (a[i] < a[i - 1]) down = up + 1, up = 1;
+        else up = down = 1;
+        answer = max(answer, max(up, down));
     }
-    cout << dp[n] << '\n';
+    cout << answer << '\n';
     return 0;
 }
