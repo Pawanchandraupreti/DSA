@@ -1,39 +1,22 @@
-// Minimum Genetic Mutation
+// Interleaving String
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    string start, target;
-    int n;
-    cin >> start >> target >> n;
-    unordered_set<string> bank;
-    for (int i = 0; i < n; i++) {
-        string gene;
-        cin >> gene;
-        bank.insert(gene);
+    string first, second, target;
+    cin >> first >> second >> target;
+    if (first.size() + second.size() != target.size()) {
+        cout << "NO\n";
+        return 0;
     }
-    queue<pair<string, int>> q;
-    q.push({start, 0});
-    string letters = "ACGT";
-    while (!q.empty()) {
-        auto [gene, steps] = q.front();
-        q.pop();
-        if (gene == target) {
-            cout << steps << '\n';
-            return 0;
-        }
-        for (int i = 0; i < (int)gene.size(); i++) {
-            string next = gene;
-            for (char letter : letters) {
-                next[i] = letter;
-                if (bank.count(next)) {
-                    bank.erase(next);
-                    q.push({next, steps + 1});
-                }
-            }
-        }
+    vector<bool> dp(second.size() + 1);
+    dp[0] = true;
+    for (int j = 1; j <= (int)second.size(); j++) dp[j] = dp[j - 1] && second[j - 1] == target[j - 1];
+    for (int i = 1; i <= (int)first.size(); i++) {
+        dp[0] = dp[0] && first[i - 1] == target[i - 1];
+        for (int j = 1; j <= (int)second.size(); j++) dp[j] = (dp[j] && first[i - 1] == target[i + j - 1]) || (dp[j - 1] && second[j - 1] == target[i + j - 1]);
     }
-    cout << -1 << '\n';
+    cout << (dp.back() ? "YES" : "NO") << '\n';
     return 0;
 }
