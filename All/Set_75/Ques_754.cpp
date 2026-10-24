@@ -1,4 +1,4 @@
-// Count Palindromic Substrings
+// Sort Characters by Frequency
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -6,13 +6,12 @@ using namespace std;
 int main() {
     string s;
     cin >> s;
-    int answer = 0;
-    for (int center = 0; center < (int)s.size(); center++) {
-        for (int gap : {0, 1}) {
-            int left = center, right = center + gap;
-            while (left >= 0 && right < (int)s.size() && s[left--] == s[right++]) answer++;
-        }
-    }
-    cout << answer << '\n';
+    unordered_map<char, int> frequency;
+    for (char ch : s) frequency[ch]++;
+    vector<pair<int, char>> values;
+    for (auto [ch, count] : frequency) values.push_back({count, ch});
+    sort(values.rbegin(), values.rend());
+    for (auto [count, ch] : values) cout << string(count, ch);
+    cout << '\n';
     return 0;
 }
