@@ -1,4 +1,4 @@
-// Stock Profit with At Most K Transactions
+// Maximum Average Subarray
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -6,14 +6,13 @@ using namespace std;
 int main() {
     int n, k;
     cin >> n >> k;
-    vector<int> price(n), buy(k + 1, INT_MIN), sell(k + 1);
-    for (int &x : price) cin >> x;
-    for (int value : price) {
-        for (int transaction = 1; transaction <= k; transaction++) {
-            buy[transaction] = max(buy[transaction], sell[transaction - 1] - value);
-            sell[transaction] = max(sell[transaction], buy[transaction] + value);
-        }
+    vector<int> a(n);
+    for (int &x : a) cin >> x;
+    long long sum = accumulate(a.begin(), a.begin() + k, 0LL), best = sum;
+    for (int i = k; i < n; i++) {
+        sum += a[i] - a[i - k];
+        best = max(best, sum);
     }
-    cout << sell[k] << '\n';
+    cout << fixed << setprecision(5) << (double)best / k << '\n';
     return 0;
 }
