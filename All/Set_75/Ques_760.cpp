@@ -1,26 +1,22 @@
-// Minimum Taps to Water Garden
+// Regular Expression Matching
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int n, m;
-    cin >> n >> m;
-    vector<pair<int, int>> ranges(m);
-    for (auto &[left, right] : ranges) cin >> left >> right;
-    sort(ranges.begin(), ranges.end());
-
-    int covered = 0, index = 0, answer = 0;
-    while (covered < n && index < m) {
-        int next = covered;
-        while (index < m && ranges[index].first <= covered) next = max(next, ranges[index++].second);
-        if (next == covered) {
-            cout << -1 << '\n';
-            return 0;
+    string text, pattern;
+    cin >> text >> pattern;
+    int n = text.size(), m = pattern.size();
+    vector<vector<bool>> dp(n + 1, vector<bool>(m + 1));
+    dp[0][0] = true;
+    for (int j = 2; j <= m; j++) if (pattern[j - 1] == '*') dp[0][j] = dp[0][j - 2];
+    for (int i = 1; i <= n; i++) for (int j = 1; j <= m; j++) {
+        if (pattern[j - 1] == '.' || pattern[j - 1] == text[i - 1]) dp[i][j] = dp[i - 1][j - 1];
+        else if (pattern[j - 1] == '*') {
+            dp[i][j] = dp[i][j - 2];
+            if (pattern[j - 2] == '.' || pattern[j - 2] == text[i - 1]) dp[i][j] = dp[i][j] || dp[i - 1][j];
         }
-        covered = next;
-        answer++;
     }
-    cout << answer << '\n';
+    cout << (dp[n][m] ? "YES" : "NO") << '\n';
     return 0;
 }
