@@ -1,23 +1,21 @@
-// Longest Turbulent Subarray
+// Subarray Sum Divisible by K
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
-    vector<int> a(n);
-    for (int &x : a) cin >> x;
-    int up = 1, down = 1, answer = min(n, 1);
-    for (int i = 1; i < n; i++) {
-        if (a[i] > a[i - 1]) {
-            up = down + 1;
-            down = 1;
-        } else if (a[i] < a[i - 1]) {
-            down = up + 1;
-            up = 1;
-        } else up = down = 1;
-        answer = max(answer, max(up, down));
+    int n, k;
+    cin >> n >> k;
+    vector<long long> count(k);
+    count[0] = 1;
+    long long prefix = 0, answer = 0;
+    for (int i = 0; i < n; i++) {
+        int x;
+        cin >> x;
+        prefix = (prefix + x) % k;
+        if (prefix < 0) prefix += k;
+        answer += count[prefix];
+        count[prefix]++;
     }
     cout << answer << '\n';
     return 0;
