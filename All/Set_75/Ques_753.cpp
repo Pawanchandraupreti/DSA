@@ -1,22 +1,18 @@
-// Longest Palindromic Subsequence
+// Rotate Array Right
 
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-    string s;
-    cin >> s;
-    vector<int> dp(s.size());
-    for (int left = s.size() - 1; left >= 0; left--) {
-        dp[left] = 1;
-        int diagonal = 0;
-        for (int right = left + 1; right < (int)s.size(); right++) {
-            int old = dp[right];
-            if (s[left] == s[right]) dp[right] = diagonal + 2;
-            else dp[right] = max(dp[right], dp[right - 1]);
-            diagonal = old;
-        }
-    }
-    cout << (s.empty() ? 0 : dp.back()) << '\n';
+    int n, k;
+    cin >> n >> k;
+    vector<int> a(n);
+    for (int &x : a) cin >> x;
+    k %= n;
+    reverse(a.begin(), a.end());
+    reverse(a.begin(), a.begin() + k);
+    reverse(a.begin() + k, a.end());
+    for (int x : a) cout << x << ' ';
+    cout << '\n';
     return 0;
 }
