@@ -14,3 +14,4 @@ int main() {
     else cout << fixed << setprecision(5) << (merged[merged.size() / 2 - 1] + merged[merged.size() / 2]) / 2.0 << '\n';
     return 0;
 }
+
