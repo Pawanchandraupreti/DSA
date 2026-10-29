@@ -19,3 +19,5 @@ int main() {
     cout << (answer == (int)source.size() + 1 ? 0 : answer) << '\n';
     return 0;
 }
+
+
