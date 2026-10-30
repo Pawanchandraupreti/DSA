@@ -36,3 +36,4 @@ int main() {
     cout << (digit && exponentDigit ? "YES" : "NO") << '\n';
     return 0;
 }
+
