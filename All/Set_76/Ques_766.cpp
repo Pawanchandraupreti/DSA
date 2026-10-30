@@ -19,3 +19,5 @@ int main() {
     cout << reversed.substr(0, s.size() - prefix.back()) + s << '\n';
     return 0;
 }
+
+
