@@ -27,3 +27,5 @@ int main() {
     cout << shapes.size() << '\n';
     return 0;
 }
+
+
