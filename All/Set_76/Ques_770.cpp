@@ -17,3 +17,5 @@ int main() {
     cout << *min_element(dp.begin(), dp.end()) << '\n';
     return 0;
 }
+
+
