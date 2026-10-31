@@ -34,3 +34,4 @@ int main() {
     for (auto [u, v] : bridges) cout << u << ' ' << v << '\n';
     return 0;
 }
+
