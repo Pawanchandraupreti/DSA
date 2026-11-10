@@ -26,3 +26,4 @@ int main() {
     cout << (answer == INT_MAX ? -1 : answer) << '\n';
     return 0;
 }
+
