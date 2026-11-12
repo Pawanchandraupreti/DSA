@@ -14,4 +14,3 @@ int main() {
     cout << answer << '\n';
     return 0;
 }
-
