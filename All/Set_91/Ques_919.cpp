@@ -29,5 +29,3 @@ int main() {
     cout << lo << '\n';
     return 0;
 }
-
-
