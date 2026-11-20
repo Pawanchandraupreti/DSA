@@ -39,5 +39,3 @@ int main() {
     cout << (fresh ? -1 : time) << '\n';
     return 0;
 }
-
-
