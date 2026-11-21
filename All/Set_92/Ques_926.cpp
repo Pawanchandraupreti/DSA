@@ -16,4 +16,3 @@ int main() {
     cout << b << '\n';
     return 0;
 }
-
