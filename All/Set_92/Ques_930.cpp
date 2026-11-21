@@ -17,5 +17,3 @@ int main() {
     cout << max(skip, take) << '\n';
     return 0;
 }
-
-
