@@ -34,3 +34,4 @@ int main() {
     cout << farthest(farthest(0, g).first, g).second << '\n';
     return 0;
 }
+
