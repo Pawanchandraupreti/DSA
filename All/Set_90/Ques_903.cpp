@@ -30,3 +30,4 @@ int main() {
     cout << (ok ? "YES\n" : "NO\n");
     return 0;
 }
+
