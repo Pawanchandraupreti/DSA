@@ -19,5 +19,3 @@ int main() {
     cout << (dp[sum] > sum ? -1 : dp[sum]) << '\n';
     return 0;
 }
-
-
