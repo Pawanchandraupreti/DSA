@@ -16,3 +16,4 @@ int main() {
     cout << cand << '\n';
     return 0;
 }
+
